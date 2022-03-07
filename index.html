@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="colors">
+       <div onclick="change('red');" class="color" id="red"></div>
+       <div onclick="change('blue');" class="color" id="blue"></div>
+       <div onclick="change('orange');" class="color" id="orange"></div>
+       <div onclick="change('dimgrey');" class="color" id="dimgrey"></div>
+    </div>  
+    <form name="container" id="container">
+       <input name="inp"  type="text">
+       <div>
+           <span class="c" onclick="container.inp.value=''"><i>C</i></span>
+           <span onclick="container.inp.value+='/'"><i>/</i></span>
+           <span onclick="container.inp.value+='*'"><i>*</i></span>
+           <span onclick="container.inp.value+='7'"><i>7</i></span>
+           <span onclick="container.inp.value+='8'"><i>8</i></span>
+           <span onclick="container.inp.value+='9'"><i>9</i></span>
+           <span onclick="container.inp.value+='-'"><i>-</i></span>
+           <span class="plus" onclick="container.inp.value+='+'"><i>+</i></span>
+           <span onclick="container.inp.value+='4'"><i>4</i></span>
+           <span onclick="container.inp.value+='5'"><i>5</i></span>
+           <span onclick="container.inp.value+='6'"><i>6</i></span>
+           <span onclick="container.inp.value+='1'"><i>1</i></span>
+           <span onclick="container.inp.value+='2'"><i>2</i></span>
+           <span onclick="container.inp.value+='3'"><i>3</i></span>
+           <span onclick="container.inp.value+='0'"><i>0</i></span>
+           <span onclick="container.inp.value+='00'"><i>00</i></span>
+           <span onclick="container.inp.value+='.'"><i>.</i></span>
+           <span onclick="container.inp.value=eval(container.inp.value);"><i>=</i></span>
+       </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
